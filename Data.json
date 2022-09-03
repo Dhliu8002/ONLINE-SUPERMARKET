@@ -1,0 +1,16 @@
+{"Data" : [
+
+{
+    "name": "red apples",
+    "cathegory": "fruit",
+    "image": "red apples.jpg",
+    "rating": "8"
+},
+{
+    "name": "bananas",
+    "cathegory": "fruit",
+    "image": "bananas.webp",
+    "rating": "7"
+}
+]
+}

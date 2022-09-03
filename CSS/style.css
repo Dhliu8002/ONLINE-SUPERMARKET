@@ -1,0 +1,200 @@
+
+body {
+    background-color: aliceblue;
+    height: 100%;
+    overflow: hidden;
+}
+
+.nav{
+    width: 200px;
+    padding: 0;
+    background-color:lavender;
+    font-size: 12px;
+    float: left;
+}
+@media (max-width:800px) {
+  .nav {
+    display: none;
+    width: 100%;
+  }
+}
+
+.dd-bn, .dd-menu li {
+    text-align: left;
+    padding: 3px;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#icon {
+    display: block;
+    margin-bottom: 30px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    width: 100%;
+}
+#icon img{
+    width: 100%;
+    max-width: 200px;
+    padding : 0 40px 0 40px;
+    height: auto;
+    outline: none;
+    border: none;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.nav li button, .navbtn{
+    display: block;
+    text-decoration: none;
+    background-color: inherit;
+    text-align: center;
+    border: none;
+    padding: 5px 0 5px 0;
+    font-size: 12px;
+    width: 100%;
+    transition: 0.3s;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+ }
+ .nav li button:hover {
+    transition: 0.3s;
+    color: green;
+ }
+ .dd-menu li{
+    background-color: rgb(210, 210, 210);
+    color: black;
+
+ }
+ .dd-item {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: inherit;
+    color: inherit;
+    transition: 0.3s;
+ }
+ .dd-menu li a:hover {
+    transition: 0.3s;
+    color: green;
+ }
+ .dd-menu { 
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center
+  }
+  #menu {
+    display: none;
+    float: right;
+    color: black;
+    background-color: rgb(104, 211, 119);
+    margin: 15px;
+    margin-bottom: 0px;
+    padding: 7px;
+    transition: 0.3s;
+    border-radius: 6px;
+  }
+  #menu:hover {
+    background: rgb(85, 140, 100);
+    transition: 0.3s;
+  }
+  #menu-close{
+    display: none;
+    float: right;
+    transition: 0.3s;
+    border-radius: 6px;
+  }
+  #menu-close:hover {
+    color: rgb(85, 140, 100);
+    transition: 0.3s;
+
+  }
+
+  @media (max-width:800px) {
+    #menu, #menu-close {
+      display: block;
+    }
+  }
+
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+            transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(5, 50, 50, 0.5); 
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(10, 100, 100, 0.5); 
+  }
+
+  .top-header {
+    overflow: none; 
+    float: none; 
+    height: 70px;
+  }
+  #title {
+    margin-left: 30px;
+    margin-top: 20px;
+    float: left;
+    overflow-y: hidden;
+  }
+
+  #user {
+    float: right;
+    color: black;
+    margin: 15px;
+    margin-bottom: 0px;
+    transition: 0.3s;
+  }
+  #user:hover{
+    color: rgb(60, 60, 80);
+    transition: 0.3s;
+  }
+  .userdd {
+    display: none;
+    position: absolute;
+
+    border: 2px;
+    border-radius: 3px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  #user:hover .userdd{display:block;}
+
+  #content {
+    overflow-y: scroll;
+    float: none;
+    padding: 20px;
+    padding-top: 0px;
+  }
+
+.content-row{
+  display: flex;
+}
+.content-column{
+  padding: 10px;
+}
